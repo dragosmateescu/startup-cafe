@@ -1,0 +1,144 @@
+.main-layout-container {
+  .layout-main-row {
+    .layout-content-left {
+      .article-row {
+        .make-row;
+        margin-top: 30px;
+        &:last-child {
+          .layout-article-container {
+            .homepage-article {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+      .layout-left-container {
+        .homepage-tag-content {
+          position: relative;
+          .article-tag-group {
+            position: absolute;
+            right: 10px;
+            .article-tag {
+              padding: 10px 0;
+              width: 90px;
+              border-radius: 5px;
+              background-color: @light-blue;
+              .tag-text {
+                color: @white;
+                font-size: 11px;
+                text-align: center;
+                position: relative;
+                z-index: 2;
+              }
+              .tag-pointer {
+                width: 24px;
+                height: 24px;
+                background-color: #42ade2;
+                position: absolute;
+                right: -10px;
+                top: 5px;
+                z-index: 1;
+                .rotate(45deg);
+              }
+            }
+            .article-text-under-tag {
+              font-size: 11px;
+              color: @subtitle-gray;
+              margin-top: 5px;
+              span {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      .layout-article-container {
+        .homepage-article {
+          padding-bottom: 40px;
+          border-bottom : 1px solid @gray-2;
+          .article-content-row {
+            .make-row;
+            .article-image-container {
+              .make-md-column(4);
+              .article-image {
+
+              }
+            }
+            .article-details-container {
+              .make-md-column(8);
+              .article-details {
+                .article-title {
+                  h1 {
+                    font-size: 24px;
+                    margin-top: 0;
+                    font-weight: normal;
+                    margin-bottom: 5px;
+                  }
+                }
+                .subarticle-details {
+                  h5 {
+                    font-size: 11px;
+                    color: @subtitle-gray;
+                    display: inline-block;
+                    margin-top: 0;
+                    &:first-child {
+                      margin-right: 15px;
+                    }
+                  }
+                }
+                .article-content {
+                  p {
+                    line-height: 17px;
+                    margin-bottom: 2px;
+                  }
+                }
+                .article-social {
+                  position: relative;
+                  bottom: -2px;
+                  display: inline-block;
+                  width: 50%;
+                  span {
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    padding-top: 7px;
+                    color: #fff;
+                    font-size: 16px;
+                    border-radius: 50%;
+                    background-color: @gray-2;
+                    &:hover {
+                      background-color: darken(@gray-2, 10%);
+                    }
+                  }
+                }
+                .article-read-more {
+                  display: inline-block;
+                  width: 49%;
+                  text-align: right;
+                  padding-right: 20px;
+                  .read-more-btn {
+                    background-color: @gray-2;
+                    color: #fff;
+                    font-size: 11px;
+                    border-radius: 5px;
+                    border: 0;
+                    padding: 6px;
+                    &:hover {
+                      background-color: darken(@gray-2, 10%);
+                    }
+                    span {
+                      margin: 0 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .layout-content-right {
+
+    }
+  }
+}

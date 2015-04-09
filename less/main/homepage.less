@@ -1,0 +1,89 @@
+.main-layout-container {
+  background-color: @gray-1;
+  .homepage-top-row {
+    .make-row;
+  }
+  .homepage-top {
+    background: @white;
+    height: 386px;
+    .make-row;
+    .homepage-left {
+      .make-md-column(9);
+      height: 100%;
+      .homepage-left-row {
+        .make-row;
+        height: 100%;
+        .left-content {
+          .make-md-column(3);
+          height: 100%;
+          .homepage-logo-container {
+            position: relative;
+            height: 100%;
+            .logo {
+              text-align: center;
+              padding: 33% 0;
+            }
+            .partners {
+              position: absolute;
+              bottom: 30px;
+              padding: 0 5%;
+              .partners-text {
+                padding-bottom: 10px;
+                font-size: 11px;
+                text-transform: lowercase;
+              }
+              .partners-logos {
+                img {
+                  &:last-child {
+                    margin-left: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .homepage-center {
+          .make-md-column(9);
+          .custom-gutter(0, 0);
+          height: 100%;
+          .center-content {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .homepage-right {
+      .make-md-column(3);
+      .custom-gutter(15, 0);
+      height: 100%;
+      .right-content {
+        height: 100%;
+      }
+    }
+  }
+  .layout-main-row {
+    margin-top: -9px;
+    background-color: @gray-1;
+    .layout-content-left {
+      height: 100%;
+      .layout-left-container {
+        height: 100%;
+        .homepage-tag-content {
+          height: 100%;
+        }
+      }
+      .layout-article-container {
+        height: 100%;
+        .homepage-article {
+          height: 100%;
+        }
+      }
+    }
+    .layout-content-right {
+      height: 100%;
+      .homepage-sidebar-right {
+        height: 100%;
+      }
+    }
+  }
+}

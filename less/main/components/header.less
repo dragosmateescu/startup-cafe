@@ -1,0 +1,146 @@
+header {
+  .navbar-default {
+    background-color: @white;
+    height: 50px;
+    border: 0;
+    margin-bottom: 0;
+    .navigation-links {
+      margin-left: 18%;
+      display: inline-block;
+      .navbar-collapse {
+        .custom-gutter(0, 0);
+      }
+      .navbar-nav {
+        li {
+          &:first-child {
+            a {
+              margin-left: 0;
+            }
+          }
+          &.active{
+            a {
+              border-bottom: 12px solid @blue;
+              background: none;
+              padding-bottom: 3px;
+            }
+          }
+          a {
+            padding: 15px 0 15px 0;
+            margin: 0 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: @roboto;
+            color: @gray;
+            &:hover {
+              color: @black;
+            }
+          }
+        }
+      }
+    }
+    .social-search-container {
+      float: right;
+      padding-top: 7px;
+      text-align: right;
+      .header-social {
+        position: relative;
+        bottom: -2px;
+        display: inline-block;
+        span {
+          height: 30px;
+          width: 30px;
+          text-align: center;
+          padding-top: 7px;
+          color: @white;
+          font-size: 16px;
+          border-radius: 50%;
+          background-color: @yellow;
+          &:hover {
+            background-color: darken(@yellow, 10%);
+          }
+        }
+      }
+    }
+    .header-login {
+      position: relative;
+      bottom: -2px;
+      margin: 0 5px;
+      padding: 0 5px;
+      padding-bottom: 2px;
+      display: inline-block;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: @black;
+      border-radius: 5px;
+      &:hover {
+        a {
+          text-decoration: none;
+        }
+        background-color: @yellow;
+        span.fa-user {
+          color: @white;
+        }
+        span.fa-chevron-down {
+          color: @white;
+        }
+      }
+      span.fa-user {
+        position: relative;
+        bottom: -2px;
+        font-size: 20px;
+        color: @yellow;
+      }
+      span.fa-chevron-down {
+        font-size: 7px;
+        position: relative;
+        left: -2px;
+        color: @yellow;
+      }
+    }
+    .header-search {
+      display:  inline-block;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        font-size: 20px;
+        color: @yellow;
+        right: 10px;
+        top: 2px;
+        font-family: "fontawesome";
+      }
+      input[type="text"] {
+        width: 145px;
+        background-color: @gray-2;
+        border: none;
+        height: 35px;
+        border-radius: 5px;
+        padding: 0 10px;
+        padding-right: 40px;
+        outline: none;
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+        &::-webkit-input-placeholder {
+          color: @white;
+          font-size: 12px;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+          color: @white;
+          font-size: 12px;
+        }
+
+        &::-moz-placeholder {  /* Firefox 19+ */
+          color: @white;
+          font-size: 12px;
+        }
+
+        &:-ms-input-placeholder {
+          color: @white;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.main-layout-container {
+  .layout-main-row {
+    .make-row;
+    .layout-content-left {
+      .make-md-column(9);
+      .article-row {
+        .make-row;
+        .layout-article-container {
+          .make-md-column(9);
+          .custom-gutter(0, 0);
+        }
+        .layout-left-container {
+          .make-md-column(3);
+        }
+      }
+    }
+    .layout-content-right {
+      .make-md-column(3);
+    }
+  }
+}
