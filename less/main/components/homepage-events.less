@@ -1,0 +1,94 @@
+.main-layout-container {
+  .layout-main-row {
+    .layout-content-right {
+      margin-top: 30px;
+      padding-right: 5px;
+      .homepage-sidebar-right {
+        .events-container {
+          .events-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            width: 90%;
+            float: right;
+            padding-left: 10px;
+          }
+          .events-content {
+            background-color: @white;
+            width: 90%;
+            float: right;
+            position: relative;
+            &:before {
+              content: "";
+              width: 22px;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: -35px;
+              background-color: @white;
+              border-radius: 10px;
+              .drop-shadow (-1px, -1px, 1px, 0, .05);
+            }
+            .event-tag {
+              width: 50%;
+              min-width: 160px;
+              background-color: @red-category;
+              position: relative;
+              &:before {
+                content: "";
+                position: absolute;
+                font-family: "FontAwesome";
+                .rotate(180deg);
+                top: 10px;
+                left: -10px;
+                color: @red-category;
+              }
+              &:after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                left: -28px;
+                background: @white;
+                top: 15px;
+                border-radius: 50%;
+                .inner-shadow ( 2px, 2px, 2px, 0, 0.35);
+              }
+              .event-tag-text {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: @white;
+                padding: 10px;
+              }
+            }
+            .event {
+              margin-left: 10px;
+              margin-right: 10px;
+              padding-bottom: 20px;
+              border-bottom: 1px solid @gray-2;
+              &:last-child {
+                border: none;
+              }
+              .event-text {
+                p {
+                  font-size: 14px;
+                  margin-top: 10px;
+                  margin-bottom: 5px;
+                  line-height: 15px;
+                  color: @black;
+                }
+              }
+              .event-date {
+                color: @red-category;
+                font-size: 11px;
+                margin-bottom: 10px;
+              }
+              .event-image {
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

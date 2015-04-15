@@ -135,9 +135,7 @@
     </div>
     <div class="layout-main-row">
       <div class="layout-content-left">
-        <!--
-          ARTICLE START
-        -->
+        <!-- ARTICLE START -->
         <div class="article-row">
           <div class="layout-left-container">
             <div class="homepage-tag-content">
@@ -189,12 +187,8 @@
             </div>
           </div>
         </div>
-        <!--
-          ARTICLE END
-        -->
-        <!--
-          ARTICLE START
-        -->
+        <!-- ARTICLE END -->
+        <!-- ARTICLE START -->
         <div class="article-row">
           <div class="layout-left-container">
             <div class="homepage-tag-content">
@@ -246,12 +240,8 @@
             </div>
           </div>
         </div>
-        <!--
-          ARTICLE END
-        -->
-        <!--
-          ARTICLE START
-        -->
+        <!-- ARTICLE END -->
+        <!-- ARTICLE START -->
         <div class="article-row">
           <div class="layout-left-container">
             <div class="homepage-tag-content">
@@ -303,12 +293,8 @@
             </div>
           </div>
         </div>
-        <!--
-          ARTICLE END
-        -->
-        <!--
-          ARTICLE START
-        -->
+        <!-- ARTICLE END -->
+        <!-- ARTICLE START -->
         <div class="article-row">
           <div class="layout-left-container">
             <div class="homepage-tag-content">
@@ -360,13 +346,74 @@
             </div>
           </div>
         </div>
-        <!--
-          ARTICLE END
-        -->
+        <!-- ARTICLE END -->
       </div>
       <div class="layout-content-right">
         <div class="homepage-sidebar-right">
-          TEXT
+          <div class="events-container">
+            <div class="events-title">
+              Evenimente
+            </div>
+            <div class="events-content">
+              <div class="event-details">
+                <div class="event-tag">
+                  <div class="event-tag-text">Intalniri Startup</div>
+                </div>
+                <div class="event">
+                  <div class="event-text">
+                    <p>Aliquam arcu est, tempus in elementum ut, posuere non felis. Curabitur condimentum cursus nunc sed fermen</p>
+                  </div>
+                  <div class="event-date">
+                    Martie 20, 2015
+                  </div>
+                  <div class="event-image">
+                    <img class="img-responsive" src="http://lorempixel.com/180/110/sports/" />
+                  </div>
+                </div>
+                <div class="event">
+                  <div class="event-text">
+                    <p>Aliquam arcu est, tempus in elementum ut, posuere non felis. Curabitur condimentum cursus nunc sed fermen</p>
+                  </div>
+                  <div class="event-date">
+                    Martie 20, 2015
+                  </div>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-tag">
+                  <div class="event-tag-text">Intalniri Startup</div>
+                </div>
+                <div class="event">
+                  <div class="event-text">
+                    <p>Aliquam arcu est, tempus in elementum ut, posuere non felis. Curabitur condimentum cursus nunc sed fermen</p>
+                  </div>
+                  <div class="event-date">
+                    Martie 20, 2015
+                  </div>
+                  <div class="event-image">
+                    <img class="img-responsive" src="http://lorempixel.com/180/110/sports/" />
+                  </div>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-tag">
+                  <div class="event-tag-text">Intalniri Startup</div>
+                </div>
+                <div class="event">
+                  <div class="event-text">
+                    <p>Aliquam arcu est, tempus in elementum ut, posuere non felis. Curabitur condimentum cursus nunc sed fermen</p>
+                  </div>
+                  <div class="event-date">
+                    Martie 20, 2015
+                  </div>
+                  <div class="event-image">
+                    <img class="img-responsive" src="http://lorempixel.com/180/110/sports/" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
         </div>
       </div>
     </div>
