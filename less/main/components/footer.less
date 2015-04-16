@@ -2,6 +2,7 @@ footer {
   min-height: 400px;
   background-color: @gray-1;
   border-top: 1px solid @white;
+  padding-bottom: 50px;
   .footer-container {
     .footer-content {
       .make-row();
@@ -9,9 +10,16 @@ footer {
         .make-md-column(12);
         text-align: center;
         .footer-links {
+          padding-top: 20px;
+          padding-bottom: 80px;
           li {
             display: inline-block;
             padding: 10px;
+            a {
+              font-size: 14px;
+              color: @black;
+              text-transform: uppercase;
+            }
           }
         }
       }
@@ -24,27 +32,86 @@ footer {
         .footer-details-content {
           .footer-logo-container {
             .make-md-column(2);
+            .make-md-column-offset(1);
+            text-align: center;
+            padding-top: 50px;
+            img {
+              width: 90px;
+              height: auto;
+            }
           }
           .about-list {
             .make-md-column(2);
+            ul {
+              li {
+                margin-top: 10px;
+                a {
+                  color: @black;
+                  &:hover {
+                    color: lighten(@black, 60%);
+                  }
+                }
+              }
+            }
           }
           .footer-newsletter {
-            .make-md-column(4);
+            .make-md-column(3);
+            .footer-newsletter-details {
+              p {
+                color: @gray;
+              }
+            }
+            .footer-newsletter-form {
+              label {
+                display: block;
+                margin-top: 30px;
+                color: @gray;
+                font-weight: normal;
+              }
+              input[type="text"] {
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+                height: 27px;
+                padding-left: 10px;
+                outline: none;
+                color: @gray;
+              }
+              .footer-newsletter-button {
+                text-align: right;
+                margin-top: 20px;
+                .btn-default {
+                  background-color: @gray;
+                  color: @white;
+                  text-transform: uppercase;
+                  border: none;
+                  &:hover {
+                    background-color: darken(@gray, 10%);
+                  }
+                }
+              }
+            }
           }
           .footer-social {
-            .make-md-column(4);
+            .make-md-column(3);
             .footer-social-icons {
-              span {
-                height: 30px;
-                width: 30px;
-                text-align: center;
-                padding-top: 7px;
-                color: @gray-1;
-                font-size: 16px;
-                border-radius: 50%;
-                background-color: @white;
-                &:hover {
-                  background-color: darken(@white, 40%);
+              a {
+                margin: 3px;
+                &:first-child {
+                  margin-left: 0;
+                }
+                span {
+                  height: 30px;
+                  width: 30px;
+                  text-align: center;
+                  padding-top: 7px;
+                  color: @gray-1;
+                  font-size: 16px;
+                  border-radius: 50%;
+                  background-color: @white;
+                  &:hover {
+                    background-color: darken(@white, 40%);
+                  }
                 }
               }
             }
