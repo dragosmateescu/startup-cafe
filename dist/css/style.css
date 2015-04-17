@@ -6805,7 +6805,8 @@ body {
   padding: 0;
 }
 a {
-  color: #969696;
+  color: inherit;
+  text-decoration: none;
 }
 a:hover {
   color: #000000;
@@ -7521,6 +7522,7 @@ footer .footer-container .footer-content .footer-details-container .footer-detai
 }
 .main-layout-container .homepage-top .homepage-right .right-content {
   height: 100%;
+  text-align: center;
 }
 .main-layout-container .layout-main-row {
   margin-top: -9px;
